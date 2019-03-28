@@ -1,0 +1,24 @@
+{
+    "name": "mannv/bootstrap-form",
+    "type": "library",
+    "require": {
+        "laravelcollective/html": "^5.8"
+    },
+    "authors": [
+        {
+            "name": "mannv",
+            "email": "anhmantk@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Manvn\\BootstrapForm\\BTFormServiceProvider"
+            ],
+            "aliases": {
+                "BTForm": "Manvn\\BootstrapForm\\Facades\\FormFacade",
+                "BTMandatory": "Manvn\\BootstrapForm\\Facades\\BTMandatoryFacade"
+            }
+        }
+    }
+}
