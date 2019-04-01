@@ -5,13 +5,15 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-03-28 18:47:05.
+    * Generated on 2019-04-01 08:00:24.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
     */
     override(new \Illuminate\Contracts\Container\Container, map([
         '' => '@',
+        'BTForm' => \Manvn\BootstrapForm\Builder\BTFormBuilder::class,
+        'BTMandatory' => \Manvn\BootstrapForm\Builder\BTMandatoryBuilder::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -125,6 +127,7 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'html' => \Collective\Html\HtmlBuilder::class,
+        'jsvalidator' => \Proengsoft\JsValidation\JsValidatorFactory::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -153,6 +156,8 @@ namespace PHPSTORM_META {
     ]));
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
+        'BTForm' => \Manvn\BootstrapForm\Builder\BTFormBuilder::class,
+        'BTMandatory' => \Manvn\BootstrapForm\Builder\BTMandatoryBuilder::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -266,6 +271,7 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'html' => \Collective\Html\HtmlBuilder::class,
+        'jsvalidator' => \Proengsoft\JsValidation\JsValidatorFactory::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -294,6 +300,8 @@ namespace PHPSTORM_META {
     ]));
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
+        'BTForm' => \Manvn\BootstrapForm\Builder\BTFormBuilder::class,
+        'BTMandatory' => \Manvn\BootstrapForm\Builder\BTMandatoryBuilder::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -407,6 +415,7 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'html' => \Collective\Html\HtmlBuilder::class,
+        'jsvalidator' => \Proengsoft\JsValidation\JsValidatorFactory::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -435,6 +444,8 @@ namespace PHPSTORM_META {
     ]));
     override(\App::make(0), map([
         '' => '@',
+        'BTForm' => \Manvn\BootstrapForm\Builder\BTFormBuilder::class,
+        'BTMandatory' => \Manvn\BootstrapForm\Builder\BTMandatoryBuilder::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -548,6 +559,7 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'html' => \Collective\Html\HtmlBuilder::class,
+        'jsvalidator' => \Proengsoft\JsValidation\JsValidatorFactory::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -576,6 +588,8 @@ namespace PHPSTORM_META {
     ]));
     override(\App::makeWith(0), map([
         '' => '@',
+        'BTForm' => \Manvn\BootstrapForm\Builder\BTFormBuilder::class,
+        'BTMandatory' => \Manvn\BootstrapForm\Builder\BTMandatoryBuilder::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -689,6 +703,7 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'html' => \Collective\Html\HtmlBuilder::class,
+        'jsvalidator' => \Proengsoft\JsValidation\JsValidatorFactory::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -717,6 +732,8 @@ namespace PHPSTORM_META {
     ]));
     override(\app(0), map([
         '' => '@',
+        'BTForm' => \Manvn\BootstrapForm\Builder\BTFormBuilder::class,
+        'BTMandatory' => \Manvn\BootstrapForm\Builder\BTMandatoryBuilder::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -830,6 +847,7 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'html' => \Collective\Html\HtmlBuilder::class,
+        'jsvalidator' => \Proengsoft\JsValidation\JsValidatorFactory::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -858,6 +876,8 @@ namespace PHPSTORM_META {
     ]));
     override(\resolve(0), map([
         '' => '@',
+        'BTForm' => \Manvn\BootstrapForm\Builder\BTFormBuilder::class,
+        'BTMandatory' => \Manvn\BootstrapForm\Builder\BTMandatoryBuilder::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -971,6 +991,7 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
         'html' => \Collective\Html\HtmlBuilder::class,
+        'jsvalidator' => \Proengsoft\JsValidation\JsValidatorFactory::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,

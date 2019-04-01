@@ -26,7 +26,8 @@ class DemoRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'email' => 'required|email'
+            'email' => 'required|email',
+            'phone_number' => 'max:10'
         ];
     }
 }

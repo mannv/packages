@@ -65,7 +65,7 @@
     </head>
     <body>
         {!! BTForm::demo() !!}
-        {!! BTForm::text('d1', 'ten cua ban', null, ['class' => 'form-control 2']) !!}
+        {!! BTForm::text('d1', 'ten cua ban', true, null, ['class' => 'form-control 2']) !!}
 
 
 

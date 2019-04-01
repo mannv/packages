@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.8.8 on 2019-03-28 19:40:35.
+ * Generated for Laravel 5.8.8 on 2019-04-01 09:39:20.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -14447,10 +14447,10 @@ namespace Manvn\BootstrapForm\Facades {
          *
          * @static 
          */ 
-        public static function text($name, $textLabel = '', $mandatory = false, $value = null, $options = array())
+        public static function text($name, $labelValue = '', $mandatory = false, $value = null, $options = array())
         {
                         /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->text($name, $textLabel, $mandatory, $value, $options);
+                        return $instance->text($name, $labelValue, $mandatory, $value, $options);
         }
         
         /**
@@ -14458,10 +14458,43 @@ namespace Manvn\BootstrapForm\Facades {
          *
          * @static 
          */ 
-        public static function email($name, $emailLabel = '', $mandatory = false, $value = null, $options = array())
+        public static function email($name, $labelValue = '', $mandatory = false, $value = null, $options = array())
         {
                         /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->email($name, $emailLabel, $mandatory, $value, $options);
+                        return $instance->email($name, $labelValue, $mandatory, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function tel($name, $labelValue = '', $mandatory = false, $value = null, $options = array())
+        {
+                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
+                        return $instance->tel($name, $labelValue, $mandatory, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function number($name, $labelValue = '', $mandatory = false, $value = null, $options = array())
+        {
+                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
+                        return $instance->number($name, $labelValue, $mandatory, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function url($name, $labelValue = '', $mandatory = false, $value = null, $options = array())
+        {
+                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
+                        return $instance->url($name, $labelValue, $mandatory, $value, $options);
         }
         
         /**
@@ -14473,6 +14506,50 @@ namespace Manvn\BootstrapForm\Facades {
         {
                         /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
                         return $instance->submit($value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function textarea($name, $labelValue = '', $mandatory = false, $value = null, $options = array())
+        {
+                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
+                        return $instance->textarea($name, $labelValue, $mandatory, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function select($name, $list = array(), $mandatory = false, $selected = null, $selectAttributes = array(), $optionsAttributes = array(), $optgroupsAttributes = array())
+        {
+                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
+                        return $instance->select($name, $list, $mandatory, $selected, $selectAttributes, $optionsAttributes, $optgroupsAttributes);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function checkbox($name, $value = 1, $mandatory = false, $checked = null, $options = array())
+        {
+                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
+                        return $instance->checkbox($name, $value, $mandatory, $checked, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function radio($name, $value = null, $mandatory = false, $checked = null, $options = array())
+        {
+                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
+                        return $instance->radio($name, $value, $mandatory, $checked, $options);
         }
         
         /**
@@ -14655,38 +14732,6 @@ namespace Manvn\BootstrapForm\Facades {
         }
         
         /**
-         * Create a tel input field.
-         *
-         * @param string $name
-         * @param string $value
-         * @param array $options
-         * @return \Illuminate\Support\HtmlString 
-         * @static 
-         */ 
-        public static function tel($name, $value = null, $options = array())
-        {
-            //Method inherited from \Collective\Html\FormBuilder            
-                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->tel($name, $value, $options);
-        }
-        
-        /**
-         * Create a number input field.
-         *
-         * @param string $name
-         * @param string $value
-         * @param array $options
-         * @return \Illuminate\Support\HtmlString 
-         * @static 
-         */ 
-        public static function number($name, $value = null, $options = array())
-        {
-            //Method inherited from \Collective\Html\FormBuilder            
-                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->number($name, $value, $options);
-        }
-        
-        /**
          * Create a date input field.
          *
          * @param string $name
@@ -14751,22 +14796,6 @@ namespace Manvn\BootstrapForm\Facades {
         }
         
         /**
-         * Create a url input field.
-         *
-         * @param string $name
-         * @param string $value
-         * @param array $options
-         * @return \Illuminate\Support\HtmlString 
-         * @static 
-         */ 
-        public static function url($name, $value = null, $options = array())
-        {
-            //Method inherited from \Collective\Html\FormBuilder            
-                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->url($name, $value, $options);
-        }
-        
-        /**
          * Create a week input field.
          *
          * @param string $name
@@ -14795,41 +14824,6 @@ namespace Manvn\BootstrapForm\Facades {
             //Method inherited from \Collective\Html\FormBuilder            
                         /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
                         return $instance->file($name, $options);
-        }
-        
-        /**
-         * Create a textarea input field.
-         *
-         * @param string $name
-         * @param string $value
-         * @param array $options
-         * @return \Illuminate\Support\HtmlString 
-         * @static 
-         */ 
-        public static function textarea($name, $value = null, $options = array())
-        {
-            //Method inherited from \Collective\Html\FormBuilder            
-                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->textarea($name, $value, $options);
-        }
-        
-        /**
-         * Create a select box field.
-         *
-         * @param string $name
-         * @param array $list
-         * @param string|bool $selected
-         * @param array $selectAttributes
-         * @param array $optionsAttributes
-         * @param array $optgroupsAttributes
-         * @return \Illuminate\Support\HtmlString 
-         * @static 
-         */ 
-        public static function select($name, $list = array(), $selected = null, $selectAttributes = array(), $optionsAttributes = array(), $optgroupsAttributes = array())
-        {
-            //Method inherited from \Collective\Html\FormBuilder            
-                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->select($name, $list, $selected, $selectAttributes, $optionsAttributes, $optgroupsAttributes);
         }
         
         /**
@@ -14901,40 +14895,6 @@ namespace Manvn\BootstrapForm\Facades {
             //Method inherited from \Collective\Html\FormBuilder            
                         /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
                         return $instance->getSelectOption($display, $value, $selected, $attributes, $optgroupAttributes);
-        }
-        
-        /**
-         * Create a checkbox input field.
-         *
-         * @param string $name
-         * @param mixed $value
-         * @param bool $checked
-         * @param array $options
-         * @return \Illuminate\Support\HtmlString 
-         * @static 
-         */ 
-        public static function checkbox($name, $value = 1, $checked = null, $options = array())
-        {
-            //Method inherited from \Collective\Html\FormBuilder            
-                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->checkbox($name, $value, $checked, $options);
-        }
-        
-        /**
-         * Create a radio button input field.
-         *
-         * @param string $name
-         * @param mixed $value
-         * @param bool $checked
-         * @param array $options
-         * @return \Illuminate\Support\HtmlString 
-         * @static 
-         */ 
-        public static function radio($name, $value = null, $checked = null, $options = array())
-        {
-            //Method inherited from \Collective\Html\FormBuilder            
-                        /** @var \Manvn\BootstrapForm\Builder\BTFormBuilder $instance */
-                        return $instance->radio($name, $value, $checked, $options);
         }
         
         /**
@@ -16437,6 +16397,63 @@ namespace Collective\Html {
         {
                         /** @var \Collective\Html\HtmlBuilder $instance */
                         return $instance->componentCall($method, $parameters);
+        }
+         
+    }
+ 
+}
+
+namespace Proengsoft\JsValidation\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class JsValidatorFacade {
+        
+        /**
+         * Creates JsValidator instance based on rules and message arrays.
+         *
+         * @param array $rules
+         * @param array $messages
+         * @param array $customAttributes
+         * @param null|string $selector
+         * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator 
+         * @static 
+         */ 
+        public static function make($rules, $messages = array(), $customAttributes = array(), $selector = null)
+        {
+                        /** @var \Proengsoft\JsValidation\JsValidatorFactory $instance */
+                        return $instance->make($rules, $messages, $customAttributes, $selector);
+        }
+        
+        /**
+         * Creates JsValidator instance based on FormRequest.
+         *
+         * @param $formRequest
+         * @param null $selector
+         * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator 
+         * @throws \Illuminate\Contracts\Container\BindingResolutionException
+         * @static 
+         */ 
+        public static function formRequest($formRequest, $selector = null)
+        {
+                        /** @var \Proengsoft\JsValidation\JsValidatorFactory $instance */
+                        return $instance->formRequest($formRequest, $selector);
+        }
+        
+        /**
+         * Creates JsValidator instance based on Validator.
+         *
+         * @param \Illuminate\Validation\Validator $validator
+         * @param null|string $selector
+         * @return \Proengsoft\JsValidation\Javascript\JavascriptValidator 
+         * @static 
+         */ 
+        public static function validator($validator, $selector = null)
+        {
+                        /** @var \Proengsoft\JsValidation\JsValidatorFactory $instance */
+                        return $instance->validator($validator, $selector);
         }
          
     }
@@ -19079,6 +19096,8 @@ namespace  {
     class Form extends \Collective\Html\FormFacade {}
 
     class Html extends \Collective\Html\HtmlFacade {}
+
+    class JsValidator extends \Proengsoft\JsValidation\Facades\JsValidatorFacade {}
  
 }
 

@@ -769,5 +769,7 @@
 <script src="{{asset('adminlte/dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('adminlte/dist/js/demo.js')}}"></script>
+<script type="text/javascript" src="{{ asset('vendor/jsvalidation/js/jsvalidation.js')}}"></script>
+{!! JsValidator::formRequest(\App\Http\Requests\DemoRequest::class, '#form-demo') !!}
 </body>
 </html>
